@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource type="Activity" id="MCAP.Miscellaneous.RetrieveUserAttributes" version="1.0.0" group="Active Directory" shortName="ADRetrieveUserAttributes" description="" assembly="ADRetrieveUserAttributesProject.dll" className="ADRetrieveUserAttributesProject.ADRetrieveUserAttributes" image="LDAP.jpg" visible="true" draggable="true" xmlns="http://hp.vtd.schemas/signature/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hp.vtd.schemas/signature/v1.0 ../../../dat/schemas/Signature.xsd">
+  <Section name="GeneralProperties" displayName="General Properties">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Name" type="xs:string" types:destination="false" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="InputProperties" isSharedMetaData="true" displayName="Input">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAMAaccountName" type="xs:string" types:displayName="sAMAaccountName">
+              <xs:annotation>
+                <xs:documentation>sAMAaccountName</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="LDAP" type="xs:string" types:displayName="LDAP">
+              <xs:annotation>
+                <xs:documentation>LDAP name and Path</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="ADCredentialUserName" type="xs:string" types:displayName="ADCredentialUserName">
+              <xs:annotation>
+                <xs:documentation>Credential to access AD</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="ADCredentialPassword" type="xs:string" types:displayName="ADCredentialPassword">
+              <xs:annotation>
+                <xs:documentation>AD User Credential Password</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="OutputProperties" source="true" dest="true" checkPoint="true" displayName="Checkpoints">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="FirstName" type="xs:string" types:displayName="FirstName">
+              <xs:annotation>
+                <xs:documentation>FirstName (givenName)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="LastName" type="xs:string" types:displayName="LastName">
+              <xs:annotation>
+                <xs:documentation>LastName(sn)
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="DisplayName" type="xs:string" types:displayName="DisplayName">
+              <xs:annotation>
+                <xs:documentation>DispalyName</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="CommonName" type="xs:string" types:displayName="CommonName">
+              <xs:annotation>
+                <xs:documentation>CommonName(cn)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Initial" type="xs:string" types:displayName="Initial">
+              <xs:annotation>
+                <xs:documentation>Initial
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="EmployeeID" type="xs:string" types:displayName="EmployeeID">
+              <xs:annotation>
+                <xs:documentation>EmployeeID
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="EmployeeType" type="xs:string" types:displayName="EmployeeType">
+              <xs:annotation>
+                <xs:documentation>EmployeeType
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="EmployeeNumber" type="xs:string" types:displayName="EmployeeNumber">
+              <xs:annotation>
+                <xs:documentation>EmployeeNumber
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Gender" type="xs:string" types:displayName="Gender">
+              <xs:annotation>
+                <xs:documentation>Gender(exstensionAttribute4)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Location" type="xs:string" types:displayName="Location">
+              <xs:annotation>
+                <xs:documentation>Location(physicalDeliveryOfficeName)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Address" type="xs:string" types:displayName="Address">
+              <xs:annotation>
+                <xs:documentation>Address(streetAddress)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="City" type="xs:string" types:displayName="City">
+              <xs:annotation>
+                <xs:documentation>City(l)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="ZIP_PostalCode" type="xs:string" types:displayName="ZIP_PostalCode">
+              <xs:annotation>
+                <xs:documentation>ZIP_PostalCode(postalCode)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="State" type="xs:string" types:displayName="State">
+              <xs:annotation>
+                <xs:documentation>State(St)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Country" type="xs:string" types:displayName="Country">
+              <xs:annotation>
+                <xs:documentation>Country(co)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="CountryISOcode" type="xs:string" types:displayName="CountryISOcode">
+              <xs:annotation>
+                <xs:documentation>CountryISOcode(c)
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="UserLogonName" type="xs:string" types:displayName="UserLogonName">
+              <xs:annotation>
+                <xs:documentation>UserLogonName(userPrincipleName)
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="JobTitle" type="xs:string" types:displayName="JobTitle">
+              <xs:annotation>
+                <xs:documentation>JobTitle(Title)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Department" type="xs:string" types:displayName="Department">
+              <xs:annotation>
+                <xs:documentation>Department
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Division" type="xs:string" types:displayName="Division">
+              <xs:annotation>
+                <xs:documentation>Division
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Company" type="xs:string" types:displayName="Company">
+              <xs:annotation>
+                <xs:documentation>Company
+</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Manager" type="xs:string" types:displayName="Manager">
+              <xs:annotation>
+                <xs:documentation>Manager</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Email" type="xs:string" types:displayName="Email">
+              <xs:annotation>
+                <xs:documentation>Email(mail)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Description" type="xs:string" types:displayName="Description">
+              <xs:annotation>
+                <xs:documentation>Description</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="DepartmentNumber" type="xs:string" types:displayName="DepartmentNumber">
+              <xs:annotation>
+                <xs:documentation>DepartmentNumber</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="Groups" type="xs:string" types:displayName="Groups">
+              <xs:annotation>
+                <xs:documentation>Group Membership</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="Alerts"></Section>
+</Resource>

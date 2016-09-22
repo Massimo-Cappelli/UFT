@@ -1,0 +1,7 @@
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\ADRetrieveUserAttributes\SourceCode\obj\Debug\ADRetrieveUserAttributesProject.csprojResolveAssemblyReference.cache
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\ADRetrieveUserAttributes\SourceCode\obj\Debug\ADRetrieveUserAttributesProject.Properties.Resources.resources
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\ADRetrieveUserAttributes\SourceCode\obj\Debug\ADRetrieveUserAttributesProject.csproj.GenerateResource.Cache
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\ADRetrieveUserAttributes\SourceCode\obj\Debug\ADRetrieveUserAttributesProject.pdb
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\ADRetrieveUserAttributes\ADRetrieveUserAttributesProject.pdb
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\ADRetrieveUserAttributes\SourceCode\obj\Debug\ADRetrieveUserAttributesProject.dll
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\ADRetrieveUserAttributes\ADRetrieveUserAttributesProject.dll

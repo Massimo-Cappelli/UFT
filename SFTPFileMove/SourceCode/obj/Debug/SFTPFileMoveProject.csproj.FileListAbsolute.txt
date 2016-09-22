@@ -1,0 +1,7 @@
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\SFTPFileMove\SourceCode\obj\Debug\SFTPFileMoveProject.csprojResolveAssemblyReference.cache
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\SFTPFileMove\SourceCode\obj\Debug\SFTPFileMoveProject.Properties.Resources.resources
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\SFTPFileMove\SourceCode\obj\Debug\SFTPFileMoveProject.csproj.GenerateResource.Cache
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\SFTPFileMove\SourceCode\obj\Debug\SFTPFileMoveProject.dll
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\SFTPFileMove\SourceCode\obj\Debug\SFTPFileMoveProject.pdb
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\SFTPFileMove\SFTPFileMoveProject.dll
+C:\Users\massimo.cappelli\Documents\ActivityWizardProjects\SFTPFileMove\SFTPFileMoveProject.pdb

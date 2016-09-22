@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resource type="Activity" id="MCAP.SFTP.SFTPFileUpLoad" version="1.0.0" group="SFTP" shortName="SFTPFileUpload" description="" assembly="SFTPFileUploadProject.dll" className="SFTPFileUploadProject.SFTPFileUpload" image="SFTP.png" visible="true" draggable="true" xmlns="http://hp.vtd.schemas/signature/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hp.vtd.schemas/signature/v1.0 ../../../dat/schemas/Signature.xsd">
+  <Section name="GeneralProperties" displayName="General Properties">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Name" type="xs:string" types:destination="false" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="InputProperties" isSharedMetaData="true" displayName="Input">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="SFTPServer" type="xs:string" types:displayName="SFTPServer">
+              <xs:annotation>
+                <xs:documentation>SFTP Server Example:11.11.11.11</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="FileMask" type="xs:string" types:displayName="FileMask">
+              <xs:annotation>
+                <xs:documentation>File Mask *.*</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="SFTPUser" type="xs:string" types:displayName="SFTPUser">
+              <xs:annotation>
+                <xs:documentation>SFTP Log On User</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="SFTPPassword" type="xs:string" types:displayName="SFTPPassword">
+              <xs:annotation>
+                <xs:documentation>SFTP User Password</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="SFTPToPath" type="xs:string" types:displayName="SFTPToPath">
+              <xs:annotation>
+                <xs:documentation>SFTP Path (format /........../)</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+            <xs:element name="LocalPath" type="xs:string" types:displayName="LocalPath">
+              <xs:annotation>
+                <xs:documentation>Local Path</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="OutputProperties" source="true" dest="true" checkPoint="true" displayName="Checkpoints">
+    <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:types="http://hp.vtd.schemas/types/v1.0">
+      <xs:import namespace="http://hp.vtd.schemas/types/v1.0" schemaLocation="../../../dat/schemas/Types.xsd" />
+      <xs:element name="Arguments" types:displayName="Properties">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="FileProcessed" type="xs:int" types:displayName="FileProcessed">
+              <xs:annotation>
+                <xs:documentation>Number of File Processed</xs:documentation>
+              </xs:annotation>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </Section>
+  <Section name="Alerts"></Section>
+</Resource>
